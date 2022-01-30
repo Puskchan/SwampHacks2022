@@ -1,12 +1,36 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<title>Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('static/bg.jpeg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-<br>
-<br>
-{{prediction_text}}
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle">
+    <h10 class="w3-jumbo w3-animate-top">{{prediction_text}}</h10>
+    <p class="w3-large w3-center">Here are some resources to help calm yourself....</p>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"><a href="https://choosemuse.com/blog/ultimate-list-of-free-meditation-resources/">Ultimate list of free meditation resources</a></p>
+    <p class="w3-large w3-center"><a href="https://www.calm.com/">Calm meditation</p></a>
+    <p class="w3-large w3-center"><a href="https://soundcloud.com/meditation-for-students">Sound cloud - Meditation for students</p></a>
+    <p class="w3-large w3-center"><a href="https://www.mhanational.org/live-your-life-well">More about Mental health</p></a>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
 
 </body>
 </html>
